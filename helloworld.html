@@ -4,21 +4,20 @@ helloworld.html
  
 <body>
     <p>Before the script...</p>
-    <script>
+<script>
+    
+    let input = prompt("Input integer number");
+    let number = parseInt(input);
 
-        let input = 100;
+    if (number === 0) {
+        alert("zero integer number");
+    } else if (number % 2 === 0) {
+        alert("even integer number");
+    } else {
+        alert("odd integer number");
+    }
+</script>
 
-        if (input % 2 == 0)
-            alert('Even Number');
-        else if (input % 2 == 1)
-            alert('Odd Number');
-        else
-            alert('Zero number');
-
-
-
-
-    </script>
     <p>...After the first block script.</p>
     <script type="text/javascript">
         alert('Hello, world! - using script tag with type attribute (old)');
